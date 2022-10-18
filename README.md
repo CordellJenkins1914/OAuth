@@ -1,5 +1,5 @@
 # ZoomOAuth
-Simple OAuth app using Zoom API with refresh token logic
+Simple OAuth app using Zoom API with refresh token logic. App will print out the user's profile information in JSON format. 
 
 Follow Zoom documentation to create an OAuth app where credentials will be generated
 
