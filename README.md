@@ -36,7 +36,7 @@ Copy the following into this file, which we'll add your own values to:
 ```
 clientID=
 clientSecret=
-redirectURL=
+redirectURI=
 ```
 
 
