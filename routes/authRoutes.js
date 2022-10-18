@@ -45,7 +45,6 @@ router.get('/callback', async(req, res) => {
                 req.session.counter = counter;
                 req.session.tokenType = token_type;
                 
-                console.log("before getUser");
                 res.redirect('/user');
 
                 

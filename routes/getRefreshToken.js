@@ -6,7 +6,6 @@ const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
 
 async function getRefreshToken(old_refresh_token, req) {
-        console.log("in getRefreshToken");
         await axios({
             method: 'post',
             url: 'https://zoom.us/oauth/token',
@@ -18,10 +17,7 @@ async function getRefreshToken(old_refresh_token, req) {
                 'content_type': 'application/x-www-form-urlencoded',
                 Authorization: `Basic ${new Buffer.from(`${CLIENT_ID}:${CLIENT_SECRET}`).toString('base64')}`,
             },
-        }).then(response => {
-            console.log("in getRefreshToken success")
-            
-            
+        }).then(response => {            
             let {access_token, token_type, refresh_token} = response.data;
             req.session.refreshToken = refresh_token;
             req.session.accessToken = access_token;
