@@ -44,7 +44,6 @@ router.get('/callback', async(req, res) => {
                 req.session.accessToken = access_token;
                 req.session.counter = counter;
                 req.session.tokenType = token_type;
-                
                 res.redirect('/user');
 
                 
