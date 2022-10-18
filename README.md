@@ -34,9 +34,9 @@ Create a .env file in which to store your PORT, access credentials, and Redirect
 Copy the following into this file, which we'll add your own values to:
 
 ```
-clientID=
-clientSecret=
-redirectURI=
+CLIENT_ID=
+CLIENT_SECRET=
+REDIRECTURI=
 ```
 
 
