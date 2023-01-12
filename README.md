@@ -11,7 +11,7 @@ Follow Zoom documentation to create an OAuth app where credentials will be gener
 # Add scopes
 For this app you will need to add the proper scopes. The only scope we will need is the scope to read user profile information.
 
-To request data,we'll need to add that scope to our app. Click + Add Scopes and add "View your user information" (`user:read`). Click Done and continue on to the Installation page.
+To request data,we'll need to add that scope to our app. Click + Add Scopes and add "View your user information" (`user:read`) (`meeting:read`). Click Done and continue on to the Installation page.
 
 # Set up app locally
 Clone and install the app and it's dependencies. We'll be using Express for a basic Node.js server, dotenv for our credentials, axios to make HTTP requests React for frontend and cookie-session to store session variables
