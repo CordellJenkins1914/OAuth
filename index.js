@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 8888;
 const application = express();
 application.use(cookieSession({
     name: 'session',
-    keys: ['key1'],
+    keys: [process.env.SESSION_KEY],
   
     // Cookie Options
     maxAge:  24 * 60 * 60 * 1000 // 24 hours
