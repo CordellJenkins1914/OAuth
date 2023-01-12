@@ -14,7 +14,7 @@ For this app you will need to add the proper scopes. The only scope we will need
 To request data,we'll need to add that scope to our app. Click + Add Scopes and add "View your user information" (`user:read`). Click Done and continue on to the Installation page.
 
 # Set up app locally
-Clone and install the app and it's dependencies. We'll be using Express for a basic Node.js server, dotenv for our credentials, axios to make HTTP requests and cookie-session to store session variables
+Clone and install the app and it's dependencies. We'll be using Express for a basic Node.js server, dotenv for our credentials, axios to make HTTP requests React for frontend and cookie-session to store session variables
 
 `git clone https://github.com/cordelljenkins1914/OAuth.git`
 
@@ -22,7 +22,7 @@ Clone and install the app and it's dependencies. We'll be using Express for a ba
 
 Run Server:
 
-`node index.js`
+`npm start`
 
 # Set up dotenv file
 
