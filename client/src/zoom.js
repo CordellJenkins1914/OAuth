@@ -107,6 +107,10 @@ const getAccessToken = () => {
     }
   };
 
+  // For Meeting SDK
+  export const createInstantMeeting = () => axios.post('/zoom/meetings/instant');
+  export const getMeetingSignature = (meetingNumber, role = 1) => axios.post('/zoom/signature', { meetingNumber, role });
+
   export const logout = () => {
     // Clear all localStorage items
     for (const property in LOCALSTORAGE_KEYS) {

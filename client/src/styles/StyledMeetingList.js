@@ -6,53 +6,59 @@ const StyledMeetingList = styled.ul`
   padding: 0;
 
   .meeting__item {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 20px 10fr;
-    grid-gap: var(--spacing-md);
-    padding: var(--spacing-xs);
-    background-color: var(--light-grey);
-    color: var(--blue);
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.4);
     font-size: var(--fz-sm);
-    border-radius: var(--border-radius-pill);
-    transition: background-color 0.3s ease;
-    cursor: default;
-    border-style: outset;
-
-    @media (min-width: 768px) {
-      grid-template-columns: 20px 4fr 2fr minmax(60px, 1fr);
-      padding: var(--spacing-xs) var(--spacing-sm);
-    }
-
-    &:hover,
-    &:focus {
-      background-color: var(--dark-grey);
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
   }
 
-  .meeting__item__title-group {
+  .meeting__item:last-child {
+    border-bottom: none;
+  }
+
+  .meeting__item__info {
     display: flex;
-    align-items: stretch;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .meeting__item__topic {
+    font-weight: 600;
+    color: #0f172a;
   }
 
   .meeting__item__id {
-    position: relative;
-    color: var(--blue);
-    font-size: var(--fz-md);
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
   }
-  .meeting__item__topic {
-    position: relative;
-    color: var(--blue);
-    font-size: var(--fz-md);
+
+  .meeting__item__id:hover,
+  .meeting__item__id:focus {
+    text-decoration: underline;
   }
-  .meeting__item__start_time {
-    position: relative;
+
+  .meeting__item__meta {
     display: flex;
-    left: 90%;
-    @media (min-width: 768px) {
-      display: block;
-      white-space: nowrap;
-    }
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #475569;
+    gap: 12px;
+  }
+
+  .meeting__item__action {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background-image: linear-gradient(120deg, #2563eb, #7c3aed);
+    color: #fff;
+    border: none;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
   }
 `;
 

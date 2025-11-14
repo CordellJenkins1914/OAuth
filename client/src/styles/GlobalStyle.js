@@ -25,11 +25,10 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: var(--black);
-    color: var(--white);
+    background-color: #030712;
+    color: #0f172a;
     font-family: var(--font);
     font-size: var(--fz-md);
-    left 100%
   }
 
   h1, h2, h3, h4, h5, h6 {

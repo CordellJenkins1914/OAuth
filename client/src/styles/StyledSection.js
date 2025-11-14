@@ -11,38 +11,13 @@ const StyledSection = styled.section`
     width: 100%;
     max-width: var(--site-max-width);
     margin: 0 auto;
-    position: relative;
-    padding: var(--spacing-lg) var(--spacing-md);
-    right: 90%;
-    
+    padding: 60px var(--spacing-md) 80px;
+
     @media (min-width: 768px) {
-      padding: var(--spacing-xl) var(--spacing-xxl);
+      padding: 80px var(--spacing-xxl) 100px;
     }
   }
-  .section__inner_center {
-    width: 100%;
-    max-width: var(--site-max-width);
-    margin: 0 auto;
-    position: relative;
-    padding: var(--spacing-lg) var(--spacing-md);
-    right: 50%;
-    
-    @media (min-width: 768px) {
-      padding: var(--spacing-xl) var(--spacing-xxl);
-    }
-  }
-  .section__inner_left {
-    width: 100%;
-    max-width: var(--site-max-width);
-    margin: 0 auto;
-    position: relative;
-    padding: var(--spacing-lg) var(--spacing-md);
-    right: 0%;
-    
-    @media (min-width: 768px) {
-      padding: var(--spacing-xl) var(--spacing-xxl);
-    }
-  }
+
   .section__top {
     display: flex;
     justify-content: space-between;
